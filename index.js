@@ -13,12 +13,13 @@ get = new Get();
 
 app.use(bodyParser.json());
 
+/** @todo return sources data */
 app.get('/sources', function (req, res) {
 
 });
 
+/** Pass in an id query parameter that corresponds to an object in sources.js */
 app.get('/headlines', function (req, res) {
-	console.log(req.query.id, get.source(req.query.id));
 	if(req.query.id && get.sourceExists(req.query.id)) {
 		get.headlines(req.query.id, res);
 	} else {
@@ -26,6 +27,7 @@ app.get('/headlines', function (req, res) {
 	}
 });
 
+/** Start the server on port 3000 */
 var server = app.listen(3000, function () {
   var host = server.address().address
   var port = server.address().port
