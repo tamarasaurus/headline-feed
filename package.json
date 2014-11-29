@@ -1,0 +1,34 @@
+{
+  "name": "headline-feed",
+  "version": "1.0.0",
+  "description": "Node server that outputs news headlines from configurable sources",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tamarasaurus/headline-feed.git"
+  },
+  "keywords": [
+    "headlines",
+    "news",
+    "server",
+    "api"
+  ],
+  "author": "Tamara Chahine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamarasaurus/headline-feed/issues"
+  },
+  "homepage": "https://github.com/tamarasaurus/headline-feed",
+  "dependencies": {
+    "body-parser": "^1.9.3",
+    "cheerio": "^0.18.0",
+    "express": "^4.10.4",
+    "request": "^2.49.0",
+    "serve-static": "^1.7.1",
+    "underscore": "^1.7.0",
+    "xml2json": "^0.5.1"
+  }
+}
