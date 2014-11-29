@@ -9,14 +9,14 @@ A source (in sources.js) has this structure -
 
 
 	{
-		id: 'string',
-		name: 'string',
-		url: 'string',
+		id: 'abcau',
+		name: 'ABC News',
+		url: 'http://www.abc.net.au/news/feed/45910/rss.xml',
 		query: {
-			obj: 'json-query string',
-			title: 'property name'
+			obj: 'rss.channel.item',
+			title: 'title'
 		},
-		type: 'xml || scraped'
+		type: 'xml'
 	}
 	
 
