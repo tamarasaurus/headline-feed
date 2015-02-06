@@ -26,7 +26,7 @@ A source (in sources.js) has this structure -
 * query
 	* *obj* - This is a [json-query](https://www.npmjs.org/package/json-query) string that corresponds to the array of objects for news headlines in the xml feed
 	* *title* - The property name inside the object that contains the headline title
-* *type* - xml or scraped. If xml is specified the source URl is going to be parsed as xml and the query object should be in json-query format. If the type is set to scraped, the obj and title properties need to correspond to CSS selectors on the page that can be scraped
+* *type* - xml or scraped. If xml is specified the source URl is going to be parsed as xml and the query object should be in json-query format. If the type is set to scraped, the obj and title properties need to correspond to DOM selectors on the page that can be scraped
 
 ### To-do
 
